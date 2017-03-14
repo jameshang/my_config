@@ -1,4 +1,11 @@
-eureka:
+server: 
+  port: 18901
+management:  
+  port: 19001  
+  health:  
+    mail:  
+      enabled: false  
+eureka: 
   client:
     healthcheck:
       enabled: true
