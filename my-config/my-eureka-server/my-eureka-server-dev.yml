@@ -1,4 +1,8 @@
-app.env: dev
-param1: dev_value1
-param2: dev_value2
-param3: dev_value3
+server: 
+  port: 8801
+eureka:
+  client: 
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl: 
+      defaultZone: http://localhost:${server.port}/eureka/

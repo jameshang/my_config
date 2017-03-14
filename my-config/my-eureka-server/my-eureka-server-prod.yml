@@ -1,4 +1,8 @@
-app.env: prod
-param1: prod_value1
-param2: prod_value2
-param3: prod_value3
+server: 
+  port: 18801
+eureka:
+  client: 
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl: 
+      defaultZone: http://localhost:${server.port}/eureka/
